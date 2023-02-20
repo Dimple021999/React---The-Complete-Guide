@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //ITERABLES
+    //on which we can use for of loop
+    //eg string array
+
+    //string
+    const name="harshit";
+    for(let char of name){
+        console.log(char);
+    }
+
+    //array
+    const arr=['item1','item2','item3'];
+    for(let item of arr){
+        console.log(item);
+    }
+    // item1
+    // item2
+    // item3
+
+    //object
+    const user={
+        name:"harshit",
+        age:22
+    }
+    for(let key of user){
+        console.log(key);
+    }
+    //TypeError: user is not iterable
+    //objects are not iterable
+
+
+    //ARRAY LIKE OBJECT - Object that has lenght property and can be accessed using index
+    
+
+     
+
+
+</script> 
+
+</body>
+</html>

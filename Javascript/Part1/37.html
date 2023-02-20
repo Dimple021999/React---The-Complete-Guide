@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //iterating object using object.keys
+    const person={
+       name:"dimple",
+       age:22,
+       "person hobby" :['dance','sleep','learning']
+   }
+   console.log(Object.keys(person));
+   //(3) ['name', 'age', 'person hobby']
+
+   for(let key of Object.keys(person)){
+       console.log(key);
+       console.log(person[key]);
+   }
+    // name
+    // dimple
+    // age
+    // 22
+    // person hobby
+    // (3) ['dance', 'sleep', 'learning']
+    
+
+
+</script> 
+
+</body>
+</html>

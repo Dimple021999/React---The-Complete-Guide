@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //arrow function
+    //fucntion expression
+    const sum=function(a,b){
+        return a+b;
+    }
+    //arrow function
+    const sum=(a,b)=>{return a+b;}
+    console.log(sum(2,6));
+
+    const isEven=(num)=>{return num%2===0};
+    console.log(isEven(4));
+
+    const find=(array,target)=>{
+        for(let value of array){
+            if(value===target){
+                return true;
+            }
+        }
+        return -1;
+    }
+    console.log(find([1,2,3,4],2));
+
+    //if we have only one parameter in the arrow fucntion we can remove the paranthesis
+
+    const isEven=num=>{return num%2===0};
+    
+    const square=num=>num*num;
+    console.log(square(9));
+    
+
+
+
+
+
+</script> 
+
+</body>
+</html>

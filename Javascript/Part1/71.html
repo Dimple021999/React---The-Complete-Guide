@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //SETS
+     //CREATE set and storig data 
+     const number = new Set([1,2,3]);
+     console.log(number);
+    //  Set(3) {1, 2, 3}
+
+    const stringSet=new Set("abc");
+    console.log(stringSet);
+    // Set(3) {'a', 'b', 'c'}
+     
+    stringSet.add("d");
+    console.log(stringSet);
+    // Set(4) {'a', 'b', 'c', 'd'}
+
+    const items=["ietm1","item2"];
+    number.add(items);
+    number.add(items);
+    console.log(number);
+    // Set(4) {1, 2, 3, Array(2)}
+    //we are adding same array multiple times set can not have duplicate vlaues so it will store the array only one
+
+    number.add(["ietm1","item2"]);
+    number.add(["ietm1","item2"]);
+    console.log(number);
+    // Set(6) {1, 2, 3, Array(2), Array(2), Array(2)
+
+
+    //has method
+    const string=new Set("abc");
+    if(string.has("b")){
+        console.log("present");
+    }
+    else{
+        console.log("absent")
+    }
+    
+
+
+
+
+</script>  
+
+</body>
+</html>

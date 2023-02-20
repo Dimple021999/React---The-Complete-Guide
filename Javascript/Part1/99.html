@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //example of class keyword
+    class Animal{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        about(){
+            return `${this.name} is a dog and it's ${this.age} years old`;
+        }
+        eat(){
+            return `${this.name} is eating`;
+        }
+        run(){
+            return `${this.name} is running`;
+        }
+    }
+    const dog=new Animal("Scooby",10);
+    console.log(dog);
+    // Animal {name: 'Scooby', age: 10}
+
+    console.log(dog.about());
+    //Scooby is a dog and it's 10 years old
+
+    console.log(dog.eat());
+    //Scooby is eating
+
+    console.log(dog.run());
+    //Scooby is running
+
+    //creating dog class
+    class Dog{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        about(){
+            return `${this.name} is a dog and it's ${this.age} years old`;
+        }
+        eat(){
+            return `${this.name} is eating`;
+        }
+        run(){
+            return `${this.name} is running`;
+        }
+    }
+    const dog1=new Dog("harry",10);
+    console.log(dog1);
+    // Dog {name: 'harry', age: 10}
+    console.log(dog1.about());
+    // harry is a dog and it's 10 years old
+
+    /*here w ecan see that we have created dog class which is similar to animal class
+    suppose i want to creat such class which is having same property as other classs then we can extend it
+    like her we can extend animal class to dog class
+
+    so that dog class will have all property of animal class
+    */
+   class Cat extends Animal{
+
+   }
+   const cat1=new Cat("meow",10);
+   console.log(cat1);
+//    Cat {name: 'meow', age: 10}
+   console.log(cat1.about());
+//    meow is a dog and it's 10 years old
+
+</script> 
+
+</body>
+</html>

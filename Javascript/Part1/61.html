@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //sort()
+    //this method take elements as a string and sort them based on the ASCII value
+
+    //it overwrites the original array so before performing sort operation on the array we should keep the copy of the aarya or perform sort operation on the copied array, so that in furure we can use the original array.
+
+
+    const numbers=[2,45,744,7,9];
+    const res=numbers.slice(0).sort();
+    console.log(res);
+    //(5) [2, 45, 7, 744, 9] 
+    console.log(numbers);
+    // 5) [2, 45, 744, 7, 9]
+    
+
+    // as this method take input as strin,so because of the ascii value we are getting this output
+
+    const name=["harshit","Harshit","khd","aabhs"];
+    console.log(name.sort());
+    // (4) ['Harshit', 'aabhs', 'harshit', 'khd']
+
+    const num2=[2,3,67,8,9];
+    const res2=num2.slice(0).sort((a,b)=>{
+        return a-b;
+    });
+    console.log(res2);
+    // (5) [2, 3, 8, 9, 67]
+
+    const products=[
+        {pid:1,name:"A",price:100},
+        {pid:2,name:"B",price:10},
+        {pid:3,name:"C",price:140},
+    ]
+    const res3=products.slice(0).sort((a,b)=>{
+        return a.price-b.price;
+    })
+    console.log(res3);
+    // 0: {pid: 2, name: 'B', price: 10}
+    // 1: {pid: 1, name: 'A', price: 100}
+    // 2: {pid: 3, name: 'C', price: 140}
+
+
+
+
+
+
+
+
+
+
+     
+
+
+</script> 
+
+</body>
+</html>

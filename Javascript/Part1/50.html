@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //block vs function scope
+    //let & const are block scope
+    //var is function scope
+
+    //block scope
+    {
+        let fristName="Dimple";
+        console.log(fristName); //Dimple
+    }
+    // console.log(fristName);
+    //ReferenceError: fristName is not defined
+
+    /* if in a block we have variables that are declared with let or const then those variables are only accessible inside that block.*/
+
+
+    //fucntion scope
+    {
+        var a=10;
+        console.log(a);
+    }
+        console.log(a);
+    {
+        var a=20;
+        console.log(a);
+    }
+    console.log(a);
+    //10
+    //10
+    //20
+    //20
+    function app(){
+        if(true){
+            var name="harshit";
+            console.log(name);
+        }
+        if(true){
+            console.log(name);
+        }
+        console.log(name);
+    }
+    console.log(name);
+    app();
+    console.log(name);
+
+
+     
+
+</script> 
+
+</body>
+</html>

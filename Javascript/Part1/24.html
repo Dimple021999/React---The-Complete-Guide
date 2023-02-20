@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //array methods
+    // push || pop || shift || unshift
+
+    //push() add element at the end
+    let fruits=["apple","mango"];
+    console.log(fruits);
+    //(2) ['apple', 'mango']
+
+    fruits.push("grape");
+    console.log(fruits);
+    //(3) ['apple', 'mango', 'grape']
+
+    //pop() remove element from end
+    let remove= fruits.pop();
+    console.log(fruits);
+    // (2) ['apple', 'mango']
+    console.log(remove);
+    // grape
+
+    //unshift() add element at start
+    fruits.unshift("new fruits added");
+    console.log(fruits);
+    // (3) ['new fruits added', 'apple', 'mango']
+
+    let num=[1,2,3,4];
+    num.unshift(0);
+    console.log(num);
+    //(5) [0, 1, 2, 3, 4]
+
+    //shift() removes element from start 
+
+    let mix=['a','b',1,2,3];
+    let removed=mix.shift();
+    console.log(mix);
+    // (4) ['b', 1, 2, 3]
+    console.log("removed element is",removed);
+    // removed element is a
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

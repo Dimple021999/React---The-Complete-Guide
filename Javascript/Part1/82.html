@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //call() with parameters
+     const user1={
+         name:"harshit",
+         age:10,
+         about:function(hobby,food){
+             console.log(this.name,this.age,hobby,food);
+         }
+     }
+     const user2={
+         name:"mohit",
+         age:11
+     }
+     user1.about.call(user2,"dancing","golgappe");
+    //  mohit 11 dancing golgappe
+    user1.about("kjsdgk","ketua");
+
+</script> 
+
+</body>
+</html>

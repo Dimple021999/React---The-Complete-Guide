@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //using constructoe fucntion with new keyword
+    function CreateUser(fname,lname,email,age,address){
+        this.fname=fname;
+        this.lname=lname;
+        this.email=email;
+        this.age=age;
+        this.address=address; 
+    }
+    CreateUser.prototype.about=function(){
+        return `${this.fname} is ${this.age} years old`;
+    }
+    CreateUser.prototype.is18=function(){
+        return this.age>=18;
+    }
+    CreateUser.prototype.sing=function(){
+        return `${this.fname} is singing`;
+    }
+    const user1=new CreateUser("harshit","vashi","abc@gmail.com",19,"delhi");
+    console.log(user1);
+    // CreateUser {fname: 'harshit', lname: 'vashi', email: 'abc@gmail.com', age: 19, address: 'delhi'}
+
+    console.log(user1.about());
+    // harshit is 19 years old
+
+    console.log(user1.sing());
+    // harshit is singing
+
+    console.log(user1.__proto__);
+    // {about: ƒ, is18: ƒ, sing: ƒ, constructor: ƒ}
+
+    //check user1 key
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //lexical scope
+    const var1="var1";
+    function app(){
+        function fun1(){
+                function fun2(){
+                     console.log("fun2 function",var1);
+                }   
+                fun2();
+            // fun1 function fun1 var1;
+        }
+        console.log(var1);
+        fun1();
+    }
+    app();
+
+</script> 
+
+</body>
+</html>

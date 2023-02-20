@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //bind()
+    function about(hobby,food){
+        console.log(this.name,this.age,hobby,food);
+    }
+    const user1={
+        name:"harshit",
+        age:10
+    }
+    const user2={
+        name:"mohit",
+        age:21
+    }
+    about.bind(user1,"dance","fruit");
+    //above code will return new fucntion so we need to store it in a variable
+    const ans= about.bind(user1,"dance","fruits");
+    ans();
+    // harshit 10 dance fruits
+
+
+</script> 
+
+</body>
+</html>

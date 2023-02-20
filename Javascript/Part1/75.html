@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //map 
+    
+    //suppose i am hvaing an object and i want to add extra informatio into it and store altogether in different objcet in such case we can use map
+
+    const person={
+        name:'dimple',
+        id:2
+    }
+    //add gender and age into it
+    //create a map
+    const info=new Map();
+    info.set(person,{gender:'female',age:24});
+    console.log(info);
+    // Map(1) {{…} => {…}}
+    // [[Entries]]
+    // 0: {Object => Object}
+    // key: {name: 'dimple', id: 2}
+    // value: {gender: 'female', age: 24}
+
+    //to get id
+    console.log(person.id); //2
+
+    //to get gender and age
+
+    console.log(info.get(person));
+    // {gender: 'female', age: 24}
+    console.log(info.get(person).gender); //female
+    console.log(info.get(person).age);  //24
+
+    const user1={
+        id:1,
+        name:'A'
+    }
+    const user2={
+        id:1,
+        name:'B'
+    }
+    //adding age anad gender to both user
+    const info1=new Map();
+    info1.set(user1,{age:21,gender:'male'});
+    info1.set(user2,{age:22,gender:'female'});
+    console.log(info1);
+
+    console.log(user1.name); //A
+    console.log(info1.get(user1).gender);   //male
+
+    console.log(user2.name);    //B
+    console.log(info1.get(user2).gender);   //female
+    
+
+
+
+     
+
+
+</script> 
+
+</body>
+</html>

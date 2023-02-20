@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //parameter destructuring
+    const person={
+        name:"harhsit",
+        gender:"male",
+        }
+        //print person name and gender
+        function detail(obj){
+            console.log(obj.name);
+            console.log(obj.gender);
+        }
+        detail(person);
+        //harhsit
+        //male
+
+        function detail2({name,gender}){
+            console.log(name);
+            console.log(gender);
+        }
+        detail2(person);
+        //harhsit
+        //male
+
+
+
+</script> 
+
+</body>
+</html>

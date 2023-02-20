@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //how to iterate object
+    const person={
+       name:"dimple",
+       age:22,
+       "person hobby" :['dance','sleep','learning']
+   }
+   //for in loop
+   //(key)
+   for(let key in person){
+       console.log(key);
+   }
+    // name
+    // age
+    // person hobby 
+    
+    //(value)
+    for(let key in person){
+        console.log(person[key]);
+    }
+    // dimple
+    // 22
+    // (3) ['dance', 'sleep', 'learning']
+
+    //(for key value)
+    for(let key in person){
+        console.log(key,person[key]);
+    }
+    // name dimple
+    // age 22
+    // person hobby (3) ['dance', 'sleep', 'learning']
+
+    for(let key in person){
+        console.log(person.key);
+    }
+    //undefined
+    //as it will search in person with key name key
+
+    //key and value
+    for(let key in person){
+        console.log(`key is ${key} and it value is ${person[key]}`);
+    }
+
+    //key is name and it value is dimple
+    //key is age and it value is 22
+    //key is person hobby and it value is dance,sleep,learning
+    
+
+
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //object destructuring
+     const band={
+         bandName:'ABCD',
+         song:'rock'
+     }
+     //create a variable bandName and song and store the above keys value in it
+
+     const bandName=band.bandName;
+     const song=band.song;
+     console.log(bandName); //ABCD
+     console.log(song); //rock
+    
+     //shortcut using destructuring
+     const {bandName,song}=band;
+    //  //with this line we'll have two variables wiht name bandName and song
+
+     console.log(bandName);
+     console.log(song);
+
+     //using this the variable name and key name will be same so if we want diff variable name
+
+     const {bandName:var1,song:var2}=band;
+     console.log(var1,var2); //ABCD rock
+
+     const band2={
+         bandName:'ABCD',
+         song:'rock',
+         year:123,
+         diffsong:'hi'
+     }
+     //if we want to create new object with year and diffsong key
+     const {bandName,song,...newObj}=band2;
+     console.log(newObj);
+    //  {year: 123, diffsong: 'hi'}
+
+
+
+</script> 
+
+</body>
+</html>

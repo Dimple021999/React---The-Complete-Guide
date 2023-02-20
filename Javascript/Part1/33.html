@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //Array destructuring
+
+    const array=['value1','value2'];
+    //store both value in diff variable
+    const arr1=array[0];
+    const arr2=array[1];
+    console.log(arr1);
+    console.log(arr2);
+
+    //using destructuring
+    const [arr3,arr4]=array;
+    console.log(arr3);
+    console.log(arr4);
+
+    const newArray=['value1','value2','value3','value4']
+    //want to skip the index
+    const [var1,,var2]=newArray;
+    console.log(var1,var2);
+    //value1 value3
+
+    const newArray2=['value1','value2','value3','value4'];
+    //if we want to store left value in an array
+    const [v1,v2,...v3]=newArray2;
+    console.log(v1,v2,v3);
+    //value1 value2 (2) ['value3', 'value4']
+
+    
+
+
+
+
+</script> 
+
+</body>
+</html>

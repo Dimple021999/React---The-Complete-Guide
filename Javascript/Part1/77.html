@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //optional chaining
+    const user={
+        name:'dimple',
+        address:{hNo:52}
+    }
+    console.log(user.name);
+    console.log(user.address); 
+    //{hNo: 52}
+    //to get houser number
+    console.log(user.address.hNo); //52
+
+    const user2={
+        name:'harshit'
+    }
+    console.log(user2.address);
+    //undefined
+    console.log(user2.address.hNo);
+    // Uncaught TypeError: Cannot read properties of undefined (reading 'hNo')
+
+    /*
+    sometime it may happen that a property which we are trying to access is not presnt in the object or may be it will be present in near future in such case we don't want output as an error.
+    we want it should return undefined
+    in such case we can use optional chaining
+    */
+    console.log(user2?.address?.hNo);
+    //undefined
+    
+   
+
+
+
+</script> 
+
+</body>
+</html>

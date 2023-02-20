@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //class keyword
+    class CreateUser{
+        constructor(fname,lname,email,age,address){
+            this.fname=fname;
+            this.lname=lname;
+            this.email=email;
+            this.age=age;
+            this.address=address;
+        }
+        about(){
+            return `${this.fname} is ${this.age} years old`;
+        }
+        is18(){
+            return this.age>=18;
+        }
+        sing(){
+            return `${this.fname} is singinhg`;
+        }
+    }
+    const user1=new CreateUser("harshit","vahsi","abc@gmial.com",19,"delhi");
+    console.log(user1);
+    //to know user1 prototype
+    console.log(Object.getPrototypeOf(user1));
+    // {constructor: ƒ, about: ƒ, is18: ƒ, sing: ƒ}
+
+    console.log(user1.about());
+
+    // CreateUser {fname: 'harshit', lname: 'vahsi', email: 'abc@gmial.com', age: 19, address: 'delhi'}
+
+    //if we are not creating an object with new keyword then we cannot access the class constructor we'll get type erro
+
+    const user2 = CreateUser("harshit","vahsi","abc@gmial.com",19,"delhi");
+    console.log(user2);
+    // Uncaught TypeError: Class constructor CreateUser cannot be invoked without 'new'
+
+    
+
+
+
+</script> 
+
+</body>
+</html>

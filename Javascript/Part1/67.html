@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //replace() method
+    
+    function rep(str){
+        const str2 = (str.replace(/\s/g,''));
+        return str2[0];
+    }
+    const res=rep("  ROSE  ");
+    console.log(res);
+
+    let text="visit Microsoft";
+    let res2=text.replace("Microsoft","w3");
+    console.log(res2);
+    // visit w3
+
+    let text3="visit Microsoft";
+    let res3=text.replace("microsoft","w3");
+    console.log(res3);
+    //visit Microsoft (as replace is case sensitive)
+
+    let text4="vist Microsoft";
+    let res4=text4.replace(/microsoft/i,"w3");
+    console.log(res4);
+    // vist w3 ()
+    //i is modifer in js to perform case sensitive mathing in strings
+
+    const test5="visit amazon amazon amazon";
+    //chnage all amazon to microsoft
+    const res5=test5.replace(/Amazon/gi,"Microsoft");
+    console.log(res5);
+    // visit Microsoft Microsoft Microsoft
+
+    //g is the modifier in javascript which is  used to find all the occurences of the pattern instead of stopping after the frist match
+    
+
+    
+     
+
+
+</script> 
+
+</body>
+</html>

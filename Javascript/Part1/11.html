@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //undefined
+    let name;
+    console.log(name); //undefined
+    console.log(typeof name); //undefined
+
+    var name1;
+    console.log(name1 +" "+ typeof name1); //undefined undefined
+
+    // const name3;
+    // console.log(name3+" "+typeof name3); 
+    //SyntaxError: Missing initializer in const declaration
+
+
+    //null->no value/empty value
+    let a=null;
+    console.log(a);
+    console.log(typeof a); //null object
+
+    //BigInt
+    let num=123;
+    console.log(num.MAX_SAFE_INTEGER);
+
+    //convert BigInt
+    let num1=BigInt(1234);
+    console.log(num1);
+
+    let b=BigInt(12);
+    let c=13;
+    let res=b+c;
+    console.log(res);
+    //TypeError: Cannot mix BigInt and other types
+
+    let a1=12n;
+    let a2=13n
+    let res3=a1+a2;
+    console.log(res3); //25n
+    
+     
+
+    
+
+</script> 
+
+</body>
+</html>

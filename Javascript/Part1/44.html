@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //functions
+    //sum
+    function sum(a,b){
+        console.log(a+b);
+    }
+    sum(2,4); //6
+    sum();//NAN
+    //here we didn't passed any arguments so undefined + undefined = not a number (NAN)
+
+    //odd or even
+    function isEven(num){
+            if(num%2===0)
+            return true;
+            else
+            return false;
+    }
+
+    function isEven(num){
+        return num%2===0;
+    }
+
+    const res=isEven(4);
+    console.log(res);
+    const res2=isEven(5);
+    console.log(res2);
+
+    function string(str){
+        return str[0];
+    }
+    console.log(string('dimple')); //d
+
+    //input: array,target(numer)
+    //if target present in array return index of target or -1;
+
+    function findTarget(arr,target){
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]===target){
+                return i;
+            }
+        }
+        return -1;
+    }
+    const arr=[1,2,3,4];
+    const res3=findTarget(arr,3);
+    console.log(res3);
+    
+
+
+
+
+</script> 
+
+</body>
+</html>

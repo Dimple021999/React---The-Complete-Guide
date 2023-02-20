@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    function hello(){
+        console.log("Hello");
+    }
+    //js fucntion is a comibination of fucnion and object
+    console.log(hello.name);
+    //using .name we'll get fucntion name
+    //here it looks like an object like we are trying to access any property of an object
+
+
+    //IN A FUCNTION WE CAN ADD OUR OWN PROPERTY ALSO
+    hello.myOwnProperty="unique value";
+    console.log(hello.myOwnProperty);
+
+    //fucntion provides more useful properties
+        //1.name-tells fucntion name
+        //2.free space or emtpy object which is known as prototype
+
+        console.log(hello.prototype);
+        // {constructor: ƒ} 
+
+        /*
+            NOTE
+            ONLY FUCNTION PROVIDES PROTOTYPE PROPERTY
+        */
+        if(hello.prototype){
+            console.log("prototype present");
+        }
+        else{
+            console.log("prototype not present");
+        }
+        //prototype present
+
+        const user={
+            name:"harshit"
+        }
+        if(user.prototype){
+            console.log("prototype present");
+        }
+        else{
+            console.log("prototype not present");
+        }
+        //prototype not present (because onlu fucntion provide prototype property)
+
+
+        //ADDING KEY VALUE PAIR OR PROPERTY IN A PROTOTYPE
+        hello.prototype.abs="abc";
+        hello.prototype.num=1;
+        hello.prototype.sing=function(){
+            return "singing";
+        }
+        console.log(hello.prototype);
+        // {abs: 'abc', num: 1, sing: ƒ, constructor: ƒ}
+        
+        //calling prototyoe function
+        console.log(hello.prototype.sing());
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //dot vs barcket
+    const person={
+       name:"dimple",
+       age:22,
+       "person hobby" :['dance','sleep','learning']
+   }
+   //here key is having space in it so it's necessary that we arap rthem in " " 
+
+//    console.log(person.person hobby);
+   //SyntaxError: missing )
+
+   //in such case where key is having space we'll use bracket notation
+
+   console.log(person["person hobby"]);
+   //(3) ['dance', 'sleep', 'learning']
+
+   //Q  take a variable and add that variable value as a key
+
+   let key="email";
+   person[key]="abc@gmail.com";
+   console.log(person);
+   //{name: 'dimple', age: 22, person hobby: Array(3), email: 'abc@gmail.com'}
+
+   person.key="abc";
+   console.log(person);
+    //{name: 'dimple', age: 22, person hobby: Array(3), email: 'abc@gmail.com', key: 'abc'}
+    
+    //if we just write .key then key will be key not its' value similiary if we use person["key"] then also key will be key not ts value
+
+
+
+
+
+</script> 
+
+</body>
+</html>

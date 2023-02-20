@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //THIS
+     //this refers to an object in which the fucntion is getting called
+
+     const user={
+         name:'harshit',
+         age:8,
+         about:function(){
+             console.log(this);
+             console.log(this.name); //harshit
+         }
+     }
+     user.about();
+    //  {name: 'harshit', age: 8, about: ƒ}about: ƒ ()arguments:
+
+    function personInfo(){
+    console.log(`name is ${this.name} and age is ${this.age}`);
+    }
+    const person1={
+        name:"dimple",
+        age:24,
+        about:personInfo //setting function as a value for about key
+    }
+    const person2={
+        name:"twinkle",
+        age:25,
+        about:personInfo
+    }
+    const person3={
+        name:"misha",
+        age:21,
+        about:personInfo
+    }
+    const person4={
+        name:"shashi",
+        age:16,
+        about:personInfo
+    }
+    person1.about(); //name is dimple and age is 24
+    person2.about(); //name is twinkle and age is 25
+    person3.about(); //name is misha and age is 21
+    person4.about(); //name is shashi and age is 16
+    
+
+     
+
+
+</script> 
+
+</body>
+</html>

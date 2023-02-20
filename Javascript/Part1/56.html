@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    // ARRAY METHODS
+    //FOREACH()
+    const num=[4,2,5,8];
+    /* 
+    input= array element and its index
+    o/p: array element value *2 */
+
+    function mulByTwo(element,index){
+        console.log("index is",index);
+        console.log("result is",element*2);
+    }
+    //for all element
+    mulByTwo(num[0],0);
+    mulByTwo(num[1],1);
+    mulByTwo(num[2],2);
+    mulByTwo(num[3],3);
+ 
+    //index is 2
+    //result is 10
+    //index is 0
+    //result is 8
+    //index is 1
+    //result is 4 
+    //index is 3
+    //result is 16
+
+    //using normal for
+    /*
+            for(let i=0;i<num.length;i++){
+                console.log("index is",i);
+                console.log("result is num",num[i]*2);
+            }
+
+            for(let i=0;i<num.length;i++){
+                mulByTwo(num[i],i);
+    }*/
+
+    //using for each
+    num.forEach(mulByTwo);
+
+    num.forEach(function (element){
+        console.log(element/2);
+        console.log(element*2);
+    })
+    //2
+    //1
+    //1.5
+    //4
+
+    
+
+
+
+
+</script> 
+
+</body>
+</html>

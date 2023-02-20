@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    function CreateUser(fname,lname,email,age,address){
+        this.fname=fname;
+        this.lname=lname;
+        this.email=email;
+        this.age=age;
+        this.address=address; 
+    }
+    CreateUser.prototype.about=function(){
+        return `${this.fname} is ${this.age} years old`;
+    }
+    CreateUser.prototype.is18=function(){
+        return this.age>=18;
+    }
+    CreateUser.prototype.sing=function(){
+        return `${this.fname} is singing`;
+    }
+    const user1=new CreateUser("harshit","vashi","abc@gmail.com",19,"delhi");
+
+    console.log(user1);
+    // CreateUser {fname: 'harshit', lname: 'vashi', email: 'abc@gmail.com', age: 19, address: 'delhi'}
+
+    //check user1 key
+    for(let keys in user1){
+        console.log(keys);
+    }
+    // fname
+    // lname
+    // email
+    // age
+    // address
+    // about
+    // is18
+    // sing
+
+    //here we can see that it's returning prototype keys also
+
+    //TO GET ONLY FUCNTION KEYS JS HAS ONE METHOD CALLED hasOwnPropery()
+
+    for(let keys in user1){
+        if(user1.hasOwnProperty(keys)){
+            console.log(keys);
+        }
+    }
+     // fname
+    // lname
+    // email
+    // age
+    // address
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

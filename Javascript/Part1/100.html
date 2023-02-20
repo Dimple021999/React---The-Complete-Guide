@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //SUPER KEYWORD
+    //super keyword is used to call the construtor of the parent class to acess parent properties and methods
+
+    class Animal{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        about(){
+            return `${this.name} is a dog and it's ${this.age} years old`;
+        }
+        eat(){
+            return `${this.name} is eating`;
+        }
+        run(){
+            return `${this.name} is running`;
+        }
+    }
+
+    //SUPPOSE I WANT TO CREATE DOG CLASS SIMILAR TO ANIMAL CLASS BUT I WANT TO ADD EXTRA PROPERTY TO IT LIKE SPEED.
+    
+    //WE WILL ADD CONTRUCTOR TO DOG CLASS AND WILL USE SUPER TO ACCESS PROPERTIES OF PARENT CLASS
+
+    class Dog extends Animal{
+        constructor(name,age,speed){
+            super(name,age);
+            this.speed=speed;
+        }
+        run(){
+            return `${this.name} is running at ${this.speed} km/hr`;
+        }
+    }
+    const dog1=new Dog("tommy",9,10);
+    console.log(dog1); //Dog {name: 'tommy', age: 9, speed: 10}
+    console.log(dog1.about()); //tommy is a dog and it's 9 years old
+    console.log(dog1.run()); //tommy is running at 10 km/hr
+
+    //SUOOPOSE I WANT TO MODIFY ABOUT() METHOD FOR DOG CLASS WHICH IS ALREADY EXISTING IN THE PARENT CLASS THAT IS ANIMAL CLASS .    
+
+    // WE CAN ADD THE METHOD SEPERATELY N THE CHILD CLASS.
+    //THIS PROCESS IS KNOW AS METOD OVERRIDING. DECLARING A METHOD IN CHILD CLASS WHICH IS ALREADY PRESEMT IN THE PARENT CLASS IT IS KNOWN AS METHOD OVERRIDING
+
+    
+
+
+
+</script> 
+
+</body>
+</html>

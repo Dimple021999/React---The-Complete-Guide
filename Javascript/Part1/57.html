@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //for each exmaple
+    const users=[
+        {uid:1,name:"harshit"},
+        {uid:2,name:"harshita"},
+        {uid:3,name:"harsh"},
+        {uid:4,name:"mohit"},
+    ]
+    //print all user name
+    users.forEach(function(user,index){
+        console.log(user.name,index);
+    })
+    //harshit
+    //harshita
+    //harsh
+    //mohit
+
+    for(let user of users){
+        console.log(user.name);
+    }
+
+    
+     
+
+
+</script> 
+
+</body>
+</html>

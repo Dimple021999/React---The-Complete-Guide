@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //Hoisting
+    //accessing fucntion and variable before it's been declared
+
+    hello();
+    function hello(){
+        console.log("hello world");
+    }
+    //hello world
+
+    //in case of fucntion expression & arrow fucntion we can't do hoisting
+
+    sum(1,3);
+    const sum=function(a,b){
+        console.log(a+b);
+    }
+    //ReferenceError: Cannot access 'sum' before initialization
+
+    sum(1,3);
+    let sum=function(a,b){
+        console.log(a+b);
+    }
+
+    // ReferenceError: Cannot access 'sum' before initialization
+
+    sum(1,3);
+    var sum=function(a,b){
+        console.log(a+b);
+    }
+
+    // TypeError: sum is not a function
+
+
+</script> 
+
+</body>
+</html>

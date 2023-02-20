@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //OBJECT ORIENTED JAVASCRIPT
+    //METHODS
+    const user1={
+        name:'harshit',
+        age:8,
+        about:function(){
+            console.log("name is harshit and age is 8");
+        }
+    }
+    user1.about();
+    // name is harshit and age is 8
+
+    //suppose i want javascript engine to calculate name and age from object key itself
+    const user2={
+        name:"harshit",
+        age:8,
+        about:function(){
+        console.log(`person name is ${name} and age is ${age}`);
+        }
+    }
+    user2.about();
+    // ReferenceError: age is not defined at Object.about
+
+    //here we cant write like this.
+    // i want js to calculate name and age from object key itself
+
+    const user3={
+        name:"harshita",
+        age:82,
+        about:function(){
+            console.log(`name is ${this.name} and age is ${this.age}`);
+        }
+    }
+    user3.about();
+    // name is harshita and age is 82
+    
+    
+
+</script> 
+
+</body>
+</html>

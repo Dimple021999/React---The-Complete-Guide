@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //short syntax for methods
+    const user={
+        name:"harshit",
+        age:6,
+        about:function(){
+            console.log(this.name);
+        }
+    }
+    user.about(); //harshit
+            //  or
+    const user1={
+        name:"harhsit",
+        age:8,
+        about(){
+            console.log(this.name);
+        }
+    }
+    user1.about(); //harshit
+
+
+</script> 
+
+</body>
+</html>

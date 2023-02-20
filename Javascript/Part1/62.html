@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //find method()
+    /*find method returns the first element fromt the array that satisfies the provided testing fucntion
+    if no value satifies the testing fucntion undefined is returned
+    this methos executes for every elemt int he aarya and it does not change the original array*/
+
+    const arr=['hello','catty','dog','cat'];
+    const ans = arr.find(function(arrayElement){
+        return arrayElement.length===3;
+    });
+    console.log(ans);
+    //dog
+
+     const users=[
+         {uid:1,name:'harsgit'},
+         {uid:2,name:'harshit'},
+         {uid:3,name:'harsh'},
+     ]
+     const myUser=users.find((user)=>user.uid===3);
+     console.log(myUser);
+    //  {uid: 3, name: 'harsh'}
+
+
+     const name=users.find(function (user){
+         if(user.uid===3){
+             return user.name;
+            //  {uid: 3, name: 'harsh'}
+         }
+     });
+     console.log(name.name); //harsh
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

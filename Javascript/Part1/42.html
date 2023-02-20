@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //object inside array
+    const users=[
+        {uid:1,name:"harshit",gender:"male"},
+        {uid:2,name:"mohit",gender:"male"},
+        {uid:3,name:"neha",gender:"female"},
+        {uid:0,name:"varun",gender:"male"}
+    ]
+    console.log(users);
+    // 0: {uid: 1, name: 'harshit', gender: 'male'}
+    // 1: {uid: 2, name: 'mohit', gender: 'male'}
+
+    //to print user id
+    for(let user of users){
+        console.log(user.uid);
+    }
+    //1
+    //2
+    //to print female user detail
+    for(let user of users){
+        if(user.gender==='female'){
+            console.log(user);
+        }
+    }
+    // {uid: 3, name: 'neha', gender: 'female'}
+
+    //to print user name whose id is gerater than 2
+
+    for(let user of users){
+        if(user.uid>2){
+            console.log(user.name);
+        }
+    }
+    //neha
+    
+
+
+</script> 
+
+</body>
+</html>

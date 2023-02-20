@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //some warnings
+
+    const user1={
+        name:"harshit",
+        age:9,
+        about:function(){
+            console.log(this.name,this.age);
+        }
+    }
+    //don't do this
+    const fun=user1.about; //(here we are not calling about method we are just passing the about method refence in fun varaible so in this case herre this refers to window object)
+    fun();
+    //undefined
+    //in such csae we'll use bind method
+    const fun2=user1.about.bind(user1);
+    fun2();
+    // harshit 9
+    
+     
+
+
+
+</script> 
+
+</body>
+</html>

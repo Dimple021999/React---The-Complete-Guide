@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //spread operatr in object
+
+    const obj1={
+        key1:"value1",
+        key2:"value2",
+        key1:"new value"
+    }
+    console.log(obj1);
+    // {key1: 'new value', key2: 'value2'}
+    
+    /* in an object if we are having same key multiple times then the value of that key will be the last declared value
+    */
+
+    const obj2={
+        key3:"value3",
+        key4:"value4"
+    }
+
+    const newObj={...obj1};
+    console.log(newObj);
+    // {key1: 'new value', key2: 'value2'}
+
+    const merge={...obj1,...obj2};
+    console.log(merge);
+    // {key1: 'new value', key2: 'value2', key3: 'value3', key4: 'value4'}
+
+
+    const objectOne={
+        k1:'v1',
+        k2:'v2',
+        k1:'v3'
+    }
+    const objectTwo={
+        k1:'v4',
+        k3:'v5',
+        k4:'v6'
+    }
+    const merged={...objectOne,...objectTwo};
+    console.log(merged);
+    // {k1: 'v4', k2: 'v2', k3: 'v5', k4: 'v6'}
+    //as we have spreaded object two at the end so k1 is having v4 value if we spread object one at end so k1 will have v3 value
+
+
+    //add new key
+    const newObj2={...obj1, ...obj2 ,key69: "v69"};
+    console.log(newObj2);
+    // {key1: 'new value', key2: 'value2', key3: 'value3', key4: 'value4', key69: 'v69'}
+
+    const stringObject={..."abc"};
+    console.log(stringObject);
+    // {0: 'a', 1: 'b', 2: 'c'}
+    //here string index is the key
+
+    const arrayObject={...['item',"item2"]};
+    console.log(arrayObject);
+    // {0: 'item', 1: 'item2'}
+    //using this we can convert an array into an object
+    
+
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

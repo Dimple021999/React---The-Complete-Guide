@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //map iteration
+    const person=new Map();
+    person.set("name","dimple");
+    person.set("age",24);
+    person.set("gender","female");
+    console.log(person);
+    // Map(3) {'name' => 'dimple', 'age' => 24, 'gender' => 'female'}
+
+    for(let key of person){
+        console.log(key);
+    }
+    // (2) ['name', 'dimple']
+    // (2) ['age', 24]
+    // (2) ['gender', 'female']
+    //it will return the output in the form of key value pair in the form of array
+     
+    for(let [key,value] of person){
+        console.log(key,value);
+    }
+    // name dimple
+    // age 24
+    // gender female
+
+    //real life example for map
+
+    const user=new Map([['name','harshit'],['age',7]]);
+    console.log(user);
+
+
+
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //callback function
+    function fun2(name){
+        console.log("inside fun2");
+        console.log(name);
+    }
+    function fun1(callback){
+        console.log("inside fun1");
+        callback("harshit");
+    }
+    fun1(fun2);
+    //inside fun1
+    //inside fun2
+    //harshit
+    
+
+
+
+</script> 
+
+</body>
+</html>

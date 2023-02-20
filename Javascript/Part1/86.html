@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //this inside arrow function
+    const user={
+        name:"harshit",
+        age:8,
+        about:()=>{
+            console.log(this.name,this.age);
+        }        
+    }
+    user.about();//undefined
+    //in arrow function there is no ninding of this
+    /* if we are using this keyword with arrow fun then the resultant this will be the window object
+
+    and if we are using window object to get any value we'll get undefined as a result*/
+    user.about.call(user);
+
+
+</script> 
+
+</body>
+</html>

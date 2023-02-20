@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //object
+    /*
+    object store key value pair
+    reference type
+    don't have index
+    */
+   //create object
+   const person={
+       name:"harshit",
+       age:22
+   }
+   console.log(person, typeof person);
+   //{name: 'harshit', age: 22} 'object'
+
+   //access data using dot notation
+   console.log(person.name); //harshit
+   console.log(person.age); //22
+
+   const person2={
+       name:"dimple",
+       age:22,
+       hobbies:['dance','sleep','learning']
+   }
+   console.log(person2.hobbies);
+   //(3) ['dance', 'sleep', 'learning']
+
+
+   //how to add key value pair to object
+   person2.gender='male';
+   console.log(person2);
+
+   //access data using bracket notation
+   console.log(person[gender]); //error 
+   console.log(person['gender']); //male
+
+   //with bracket notation use ' '.
+
+   //adding key value using bracket notation
+   person2["email"]="abc@gmail.com";
+   console.log(person2);
+   //{name: 'dimple', age: 22, hobbies: Array(3), gender: 'male', email: 'abc@gmail.com'}
+
+
+
+
+</script> 
+
+</body>
+</html>

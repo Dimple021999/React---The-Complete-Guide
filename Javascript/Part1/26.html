@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //clone array and spread operator
+
+    let arr1=['item1','item2'];
+    let arr2=arr1;
+    console.log(arr2===arr1); //true
+
+    
+    let a1=[1,2,3,4];
+    let a2=[5,6,7]
+    let res=a1.concat(a2);
+    console.log(res);
+    //(7) [1, 2, 3, 4, 5, 6, 7]
+
+    //cloning
+    //slice()
+    let a=[1,2,3,4];
+    let b=a.slice(0);
+    console.log(a===b); //false
+
+    //concat
+    let c=[].concat(a);
+    console.log(c); //(4) [1, 2, 3, 4]
+
+    //spread operator
+    let d=[...a];
+    console.log(d); //(4) [1, 2, 3, 4]
+
+    let result=a.concat(a2,['new',"ele"]);
+    console.log(result);
+    //(9) [1, 2, 3, 4, 5, 6, 7, 'new', 'ele']
+
+    let spread=[...d,...result];
+    console.log(spread);
+    //(13) [1, 2, 3, 4, 1, 2, 3, 4, 5, 6, 7, 'new', 'ele']
+
+    let sliced=spread.slice(0,4);
+    console.log(sliced);
+
+
+</script> 
+
+</body>
+</html>

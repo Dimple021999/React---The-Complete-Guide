@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    // default parameter
+    function add(a,b){
+        return a+b;
+    }
+    const ans=add(2);
+    console.log(ans);
+    //NaN
+    /* 2 + undefined = nan
+    here i didn't passed the other argument that is the value of b
+    so i want that the value of b to be 1 in such case instead of undefined*/
+
+    //2015
+    function add(a,b){
+        if(typeof b==="undefined"){
+            b=1;
+        }
+        return a+b;
+    }
+    const ans2=add(2);
+    console.log(ans2); //3
+
+    //latest version
+
+    function add(a,b=1){
+        return a+b;
+    }
+    const ans3=add(2);
+    console.log(ans3); //3
+
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //map()
+    //map will always return something
+    const numbers=[3,4,6,1,8];
+    const square = function(num){
+        return num*num;
+    }
+    const res = numbers.map(square);
+    console.log(res);
+    //(5) [9, 16, 36, 1, 64]
+
+    const sq=function(num){
+        console.log(num*num);
+    }
+    const res2=numbers.map(sq);
+    console.log(res2);
+    // 9
+    // 16
+    // 36
+    // 1
+    // 64
+    // (5) [undefined, undefined, undefined, undefined, undefined]
+    // here we are getting undefined because the fucntion is not returning anything. with map we should use return   
+
+    const users=[
+        {uid:1,name:"A"},
+        {uid:2,name:"B"},
+        {uid:3,name:"C"},
+        {uid:4,name:"D"}
+    ]
+    //print all user name
+    users.forEach(function (user){
+        console.log("for each",user.name);
+    })
+
+    const res3=users.map(function(user){
+        return "map"+" "+user.name;
+    })
+    console.log(res3);
+    // 4) ['map A', 'map B', 'map C', 'map D']
+
+      
+
+
+</script> 
+
+</body>
+</html>

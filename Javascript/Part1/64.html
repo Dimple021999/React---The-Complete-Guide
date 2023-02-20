@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //every method()
+    const num=[2,4,6,8,9,10];
+    const res=num.every(function (num){
+        return num%2===0;
+    });
+    console.log(res); //false
+
+    const products=[
+        {pid:1,name:'tv',price:200},
+        {pid:2,name:'mobile',price:10},
+        {pid:3,name:'fridge',price:290},
+        {pid:4,name:'lappy',price:500},
+    ]
+    //check all products have price grater than 100
+
+    const ans=products.every((product)=>{
+        return product.price>100;
+    })
+    console.log(ans); //false 
+
+     
+
+
+</script> 
+
+</body>
+</html>

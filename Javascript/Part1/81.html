@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //call()
+    function hello(){
+        console.log("Hello World");
+    }
+    hello.call();
+    // Hello World
+
+    const user1={
+        name:"harshit",
+        age:10,
+        about:function(){
+            console.log(this.name,this.age);
+        }
+    }
+    user1.about();
+
+    const user2={
+        name:"harshita",
+        age:10,
+    }
+    //i want to borrow about method for user2 which is present in user1
+ 
+    user1.about.call(user2); //harshita 10
+
+    user1.about.call(); // undefined
+    user1.about.call(user1);
+
+
+
+</script> 
+
+</body>
+</html>

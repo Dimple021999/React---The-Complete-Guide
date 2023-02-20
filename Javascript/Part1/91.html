@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //function to create multple user object (using __proto__)
+    const userMethods={
+        about:function(){
+            return `${this.fname} is ${this.age} years old`;
+         },
+         is18:function(){
+             return this.age>=18;
+         },
+         sing:function(){
+             return `${this.fname} is singing`;
+         }
+    }
+
+    function createuser(fname,lname,email,age,address){
+         /*ceate object using object.create*/
+         const user=Object.create(userMethods);
+         //add key value pair
+         user.fname=fname;
+         user.lname=lname;
+         user.email=email;
+         user.age=age;
+         user.address=address;
+         return user;
+    }
+
+    const user1=createuser("harshit","vashi","abc@gmail.com",19,"delhi");
+    const user2=createuser("harshita","vashu","abc@gmail.com",19,"delhi");
+    const user3=createuser("mohit","vash","abc@gmail.com",19,"delhi");
+    console.log( user1.about()); //harshit is 19 years old
+    console.log(user2.about());//harshita is 19 years old
+    console.log(user3.sing()); //mohit is singing
+
+    console.log(user1.__proto__);
+    
+
+
+
+</script> 
+
+</body>
+</html>

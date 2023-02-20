@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //rest parameter
+    function fun1(a,b,...c){
+        console.log("value of a is",a);
+        console.log("value of b is",b);
+        console.log("value of c is",c);
+    }
+    fun1(1,2,3,4,5,6,7);
+    // value of a is 1
+    // value of b is 2
+    // value of c is (5) [3, 4, 5, 6, 7]
+
+     function sum(...nums){
+        let sum=0;
+        for(let num of nums){
+            sum+=num;
+        }
+        return sum;
+     }
+     console.log(sum(1,2,3,4,5)); //15
+     
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //object.assign() (for cloning)
+
+    const obj1={
+        key1:'value1',
+        key2:'value2'
+    }
+    const obj2=obj1
+    console.log(obj1);  //{key1: 'value1', key2: 'value2'}
+    console.log(obj2);  //{key1: 'value1', key2: 'value2'}
+    console.log(obj1===obj2);   //true
+
+    obj1.key3='value3';
+    console.log(obj1);  //{key1: 'value1', key2: 'value2', key3: 'value3'}
+    console.log(obj2);  //{key1: 'value1', key2: 'value2', key3: 'value3'}
+
+    //both obj1 and obj2 are having same address
+
+    //if i dont want like this so wecan use cloning so that both obj will have different address
+
+    //CLONING UAING SPREAD OPERATOR
+    const obj3={
+        key1:'value1',
+        key2:'value2'
+    }
+    const obj4={...obj3};
+    console.log(obj3); //{key1: 'value1', key2: 'value2'}
+    console.log(obj4); //{key1: 'value1', key2: 'value2'}
+
+    obj3.key3='value3';
+    console.log(obj3); //{key1: 'value1', key2: 'value2', key3: 'value3'}
+    console.log(obj4); //{key1: 'value1', key2: 'value2'}
+
+    //key 3 is not added to obj4 because both object are having dofferent address
+
+    //CLONING USING OBJECT.ASSIGN
+    const obj5={
+        key1:'value1232',
+        key2:'value2232'
+    }    
+    //copy obj5 to obj6
+    const obj6=Object.assign({},obj5);
+    console.log(obj5);
+    console.log(obj6);
+
+
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

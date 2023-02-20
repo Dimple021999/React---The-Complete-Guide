@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //__proto__
+    const obj1={
+        key1:"value1",
+        key2:"value2"
+    }
+
+    const obj2={
+        key3:"value3",
+    }
+
+    console.log(obj1.key1);  //value1
+    console.log(obj2.key3);  //value3
+
+    console.log(obj2.key2); //undefined
+    
+    //suppose i want to use key2 property for obj2 which is present in obj1 for this we can use __proto__
+
+    /*
+    i want that 
+    if js is unable to find key2 in obj2 then it should go to obj1 and check if key 2 is present there or not if present then print it
+    */
+   const obj3=Object.create(obj1); //(it will create empty object)
+   //obj1 is proto to obj3
+   console.log(obj3);//{}
+   obj3.key3="value3";
+   obj3.key4="value4";
+   console.log(obj3);
+//    {key3: 'value3', key4: 'value4'}
+    console.log(obj3.key2); //value2
+
+    console.log(obj3.__proto__);
+    // {key1: 'value1', key2: 'value2'} (obj1)
+
+
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

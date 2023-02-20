@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //spread operator
+    const arr1=[1,2,3];
+    const arr2=[5,6,7];
+
+    const arr3=[...arr1,...arr2];
+    console.log(arr3);
+    // (6) [1, 2, 3, 5, 6, 7]
+
+    const arr4=[...arr1,arr2]
+    console.log(arr4);
+    //(4) [1, 2, 3, Array(3)]
+
+    const str=[..."abc"];
+    console.log(str);
+    // (3) ['a', 'b', 'c']
+
+    const numberString=[..."1234"];
+    console.log(numberString);
+    // (4) ['1', '2', '3', '4']
+
+    const num=[...123];
+    console.log(num);
+    // Uncaught TypeError: 123 is not iterable
+    //number are not iterable
+    
+
+</script> 
+
+</body>
+</html>

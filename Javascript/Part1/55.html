@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //function returing function
+    function fun1(){
+        function hello(){
+            console.log("hello world");
+        }
+        return hello;
+    }
+    const ans=fun1();
+    console.log(ans);
+    // // ƒ hello(){
+    // //         console.log("hello world");
+    // //     }
+    ans();
+    // //hello world
+
+    function fun1(){
+        function hello(){
+            return "hello world return";
+        }
+        return hello;
+    }
+    const ans2=fun1();
+    console.log(ans2()); //hello world return
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //ARRAY (reference datatype)
+    /*
+    array is an ordered collection
+    of items that can store value of any datatype
+    it's dynamic in nature
+    does not have fix size
+    */
+   let fruits=["apple","mango","grapes"];
+   console.log(fruits);
+   //(3) ['apple', 'mango', 'grapes']
+
+   let num=[1,2,3,4];
+   console.log(num);
+   //(4) [1, 2, 3, 4]
+
+   let mix=["a",1,null,undefined,12.3];
+   console.log(mix);
+
+   let fruits1=["apple","mango","guava","grapes"];
+   //change mango to banana
+   console.log(fruits1); //(4) ['apple', 'mango', 'guava', 'grapes']
+    
+   //array are mutable so if we are doing this it will chamge original array
+   fruits1[1]="banana"
+   console.log(fruits1); //(4) ['apple', 'banana', 'guava', 'grapes']
+
+   console.log(typeof fruits); //object
+    console.log(Array.isArray(fruits));
+
+    let obj={}//object literal
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>

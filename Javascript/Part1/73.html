@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //MAPS OBJECT
+    const person={
+        name:"harshit",
+        age:21,
+        1:"one"
+    }
+    console.log(person.name);
+    console.log(person["name"]);
+    //key in object will always be string or symbol
+
+    //check type of key
+    for(let key in person){
+        console.log(typeof key);
+    }
+    // string
+
+    //MAP
+    const personOne=new Map();
+    //set method
+    personOne.set("name","dimple");
+    personOne.set("age",5);
+    personOne.set(1,"one");
+    console.log(personOne);
+    // Map(2) {'name' => 'dimple', 'age' => 5}
+
+    //get method
+    console.log(personOne.get("name"));
+    // personOne.clear();
+    // console.log(personOne);
+    // personOne.delete("name")
+    // console.log(personOne);
+
+    console.log(personOne.keys);
+
+    for(let user of personOne.keys()){
+        console.log(user,"its a key");
+    }
+
+    //taking arrya as key
+    const user=new Map();
+    // user1.set([1,2,3,4],"number");
+    // console.log(user1);
+    // Map(1) {Array(4) => 'number'}
+    user.set({1:'one'},'object literal as key');
+    console.log(user);
+
+
+
+</script> 
+
+</body>
+</html>

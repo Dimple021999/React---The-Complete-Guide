@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+<body>
+<script>
+    //splice() method
+    // to add or remove elements from the array
+
+    //array.splice(start index, delete(number of elements),insert (number of elements))   
+
+    //deleting 
+    const arr1=["item1","item2","item3","item4"];
+    //to  delete item 2 item3
+    const deleted=arr1.splice(1,2);
+    console.log(arr1);
+    console.log(deleted);
+    // (2) ['item1', 'item4']
+
+    //insert
+    //insert at inxed 1
+    arr1.splice(1,0,"inserted element");
+    console.log(arr1);
+    // (3) ['item1', 'inserted element', 'item4']
+
+    //delete and insert
+    const arr2=['item1','item2','item3','item4','item5'];
+    const deleted2 = arr2.splice(1,2,"inserted1","inserted2");
+    console.log(deleted2);
+    console.log(arr2);
+
+    // (2) ['item2', 'item3']
+    // (5) ['item1', 'inserted1', 'inserted2', 'item4', 'item5']
+
+
+
+
+
+
+
+
+</script> 
+
+</body>
+</html>
