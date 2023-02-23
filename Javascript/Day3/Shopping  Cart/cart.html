@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="scr/style.css" rel="preload" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <script src="scr/data.js" defer></script>
+    <script src="scr/cart.js" defer></script>
+
+</head>
+
+<body>
+    <div class="navbar flex-con" id="navbar">
+        <a href="index.html">
+            <h2>Clothing Store</h2>
+        </a>
+
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div class="cart-amount" id="cart-amount">0</div>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="shopping-cart-wrapper">
+        <div class="shopping-cart" id="shopping-cart">
+            
+        </div>
+        <div class="total-amount text-center" id="total-amount"></div>
+    </div>
+
+</body>
+
+</html>
