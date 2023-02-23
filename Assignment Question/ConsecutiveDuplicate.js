@@ -1,11 +1,11 @@
-Q. Given a string S, The task is to remove all the consecutive duplicate characters of the string and return the resultant string. 
-Examples: 
-Input: S= “aaaaabbbbbb”
-Output: ab
-Input: S = “geeksforgeeks”
-Output: geksforgeks
-Input: S = “aabccba”
-Output: abcba
+// Q. Given a string S, The task is to remove all the consecutive duplicate characters of the string and return the resultant string. 
+// Examples: 
+// Input: S= “aaaaabbbbbb”
+// Output: ab
+// Input: S = “geeksforgeeks”
+// Output: geksforgeks
+// Input: S = “aabccba”
+// Output: abcba
 
 function removeConsecutiveDuplicates(s) {
   let result = '';
